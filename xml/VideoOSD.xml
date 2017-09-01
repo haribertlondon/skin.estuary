@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
+	<onload>Dialog.Close(fullscreeninfo)</onload>
 	<onload condition="VideoPlayer.Content(LiveTV) + !Player.PauseEnabled">SetFocus(603)</onload>
 	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">602</defaultcontrol>
@@ -18,7 +19,7 @@
 		<control type="group">
 			<bottom>0</bottom>
 			<height>180</height>
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(osdvideosettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(playerprocessinfo) | Window.IsVisible(osdcmssettings) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(pvrchannelguide)]</visible>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(fullscreeninfo) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(osdvideosettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(playerprocessinfo) | Window.IsVisible(osdcmssettings) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="label">
 				<right>30</right>
@@ -43,7 +44,7 @@
 					<onup>87</onup>
 					<ondown>noop</ondown>
 					<onleft>70043</onleft>
-					<onright>70040</onright>
+					<onright>70011</onright>
 					<control type="radiobutton" id="600">
 						<include content="OSDButton">
 							<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
@@ -126,14 +127,14 @@
 					<ondown condition="Control.HasFocus(255)">13103</ondown>
 					<onleft>606</onleft>
 					<onright>600</onright>
-<!-- 					<control type="radiobutton" id="70011">
+					<control type="radiobutton" id="70011">
 						<include content="OSDButton">
 							<param name="texture" value="osd/fullscreen/buttons/information.png"/>
 						</include>
 						<onclick>Action(Close)</onclick>
 						<onclick>ActivateWindow(fullscreeninfo)</onclick>
 					</control>
- -->					<control type="radiobutton" id="70040">
+					<control type="radiobutton" id="70040">
 						<include content="OSDButton">
 							<param name="texture" value="osd/fullscreen/buttons/channels.png"/>
 						</include>
@@ -146,7 +147,7 @@
 							<param name="texture" value="osd/fullscreen/buttons/guide.png"/>
 						</include>
 						<onclick>Dialog.Close(VideoOSD)</onclick>
-						<onclick>ActivateWindow(pvrchannelguide)</onclick>
+						<onclick>ActivateWindow(PVROSDGuide)</onclick>
 						<visible>VideoPlayer.Content(livetv)</visible>
 					</control>
 					<control type="radiobutton" id="700">

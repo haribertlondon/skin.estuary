@@ -16,7 +16,7 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: /xml/Home.xml /xml/DialogSeekBar.xml
+#: /xml/Home.xml /xml/DialogFullScreenInfo.xml
 msgctxt "#31000"
 msgid "Now playing"
 msgstr ""
@@ -56,10 +56,7 @@ msgctxt "#31007"
 msgid "Unwatched movies"
 msgstr ""
 
-#: /xml/SkinSettings.xml
-msgctxt "#31008"
-msgid "Enable category widgets"
-msgstr ""
+#empty string with id 31008
 
 #: /xml/MyVideoNav.xml
 msgctxt "#31009"
@@ -139,10 +136,7 @@ msgctxt "#31023"
 msgid "Viewtype"
 msgstr ""
 
-#: /xml/SkinSettings.xml
-msgctxt "#31024"
-msgid "Choose rating to display for media items"
-msgstr ""
+#empty string with id 31024
 
 #: /xml/DialogFavourites.xml
 msgctxt "#31025"
@@ -596,7 +590,12 @@ msgctxt "#31131"
 msgid "Choose skin fanart pack"
 msgstr ""
 
-#empty strings from id 31132 to 31133
+#: /xml/MyVideoNav.xml /xml/View_502_FanArt.xml
+msgctxt "#31132"
+msgid "min"
+msgstr ""
+
+#empty string with id 31133
 
 #: /xml/DialogSeekBar.xml
 msgctxt "#31134"
@@ -725,14 +724,4 @@ msgstr ""
 #: /xml/DialogNumeric.xml
 msgctxt "#31161"
 msgid "Numeric pad"
-msgstr ""
-
-#: /xml/Home.xml
-msgctxt "#31162"
-msgid "Play your personal games or download one of the many game add-ons from the official repository."
-msgstr ""
-
-#: /xml/Custom_1105_MusicOSDSettings.xml
-msgctxt "#31163"
-msgid "Show Fanart background"
 msgstr ""
