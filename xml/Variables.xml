@@ -326,6 +326,15 @@
 		<value condition="!String.IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
 		<value condition="!ListItem.IsParentFolder">OverlayUnwatched.png</value>
 	</variable>
+	<variable name="ListWatchedColor">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">FFDDBD3E</value>		
+	</variable>
+	<variable name="ListWatchedBoldA">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">[B]</value>		
+	</variable>
+	<variable name="ListWatchedBoldB">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">[/B]</value>		
+	</variable>
 	<variable name="WallWatchedIconVar">
 		<value condition="ListItem.IsRecording">windows/pvr/record.png</value>
 		<value condition="ListItem.IsCollection">overlays/set.png</value>
