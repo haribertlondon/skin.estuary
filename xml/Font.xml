@@ -54,6 +54,12 @@
 			<linespacing>0.8</linespacing>
 		</font>
 		<font>
+			<name>font32</name>
+			<filename>NotoSans-Regular.ttf</filename>
+			<size>32</size>
+			<style>lighten</style>
+		</font>
+		<font>
 			<name>font37</name>
 			<filename>NotoSans-Regular.ttf</filename>
 			<size>37</size>
@@ -74,7 +80,7 @@
 		<font>
 			<name>font_clock</name>
 			<filename>Roboto-Thin.ttf</filename>
-			<size>20</size>
+			<size>70</size>
 		</font>
 		<!-- Title Fonts -->
 		<font>
@@ -111,6 +117,12 @@
 			<name>font36_title</name>
 			<filename>NotoSans-Regular.ttf</filename>
 			<size>36</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>font40_title</name>
+			<filename>NotoSans-Regular.ttf</filename>
+			<size>40</size>
 			<style>bold</style>
 		</font>
 		<font>
@@ -190,6 +202,11 @@
 			<linespacing>0.8</linespacing>
 		</font>
 		<font>
+			<name>font32</name>
+			<filename>arial.ttf</filename>
+			<size>32</size>
+		</font>
+		<font>
 			<name>font37</name>
 			<filename>arial.ttf</filename>
 			<size>37</size>
@@ -246,6 +263,12 @@
 			<name>font36_title</name>
 			<filename>arial.ttf</filename>
 			<size>36</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>font40_title</name>
+			<filename>arial.ttf</filename>
+			<size>40</size>
 			<style>bold</style>
 		</font>
 		<font>
