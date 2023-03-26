@@ -62,9 +62,6 @@
 	</variable>
 	<variable name="InfoWallThumbVar">
 		<value condition="!String.IsEqual(listitem.dbtype,musicvideo) + !String.IsEmpty(Listitem.Art(poster))">$INFO[Listitem.Art(poster)]</value>
-		<value condition="String.IsEqual(ListItem.DbType,episode) + System.Setting(hideunwatchedepisodethumbs) + Integer.IsEqual(ListItem.Playcount,0) + !String.IsEmpty(Listitem.Art(fanart))">$INFO[Listitem.Art(fanart)]</value>
-		<value condition="String.IsEqual(ListItem.DbType,episode) + System.Setting(hideunwatchedepisodethumbs) + Integer.IsEqual(ListItem.Playcount,0) + String.IsEmpty(Listitem.Art(fanart))">OverlaySpoiler.png</value>
-		<value condition="String.IsEqual(ListItem.DbType,episode) + [ !System.Setting(hideunwatchedepisodethumbs) | Integer.IsGreater(ListItem.Playcount,0) ]">$INFO[Listitem.Art(thumb)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="PosterThumbVar">
@@ -101,7 +98,6 @@
 		<value condition="String.IsEqual(listitem.dbtype,artist)">$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:  [/COLOR],[CR]]$INFO[ListItem.Property(Artist_YearsActive),[COLOR button_focus]$LOCALIZE[21898]:  [/COLOR],[CR]]$INFO[ListItem.Property(Artist_Style),[COLOR button_focus]$LOCALIZE[736]:  [/COLOR],[CR]]</value>
 		<value condition="String.IsEqual(listitem.dbtype,album)">$INFO[ListItem.Year,[COLOR button_focus]$LOCALIZE[345]:  [/COLOR],[CR]]$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:  [/COLOR],[CR]]$INFO[ListItem.Property(album_label),[COLOR button_focus]$LOCALIZE[21899]:  [/COLOR],[CR]]$INFO[ListItem.Property(album_style),[COLOR button_focus]$LOCALIZE[736]:  [/COLOR],[CR]]</value>
 		<value condition="String.IsEqual(Listitem.DBType,season) | String.IsEqual(Listitem.DBType,tvshow)">$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:  [/COLOR],[CR]]$INFO[ListItem.Premiered,[COLOR button_focus]$LOCALIZE[20416]:  [/COLOR]]</value>
-		<value condition="Container.Content(favourites)">$INFO[ListItem.Property(favourite.action),[COLOR button_focus]$LOCALIZE[15217]:  [/COLOR],[CR]]$INFO[ListItem.Property(favourite.provider),[COLOR button_focus]$LOCALIZE[15225]:  [/COLOR],[CR]]</value>
 		<value>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:  [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]:  [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]:  [/COLOR],[CR]]$INFO[ListItem.Premiered,[COLOR button_focus]$LOCALIZE[20416]:  [/COLOR]]</value>
 	</variable>
 	<variable name="ShiftRightTextBoxVar">
@@ -456,6 +452,15 @@
 		<value condition="ListItem.IsFolder + String.IsEmpty(Listitem.dbtype) + !String.IsEqual(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsParentFolder">overlays/folder.png</value>
 		<value condition="!String.IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
 		<value condition="!ListItem.IsParentFolder">OverlayUnwatched.png</value>
+	</variable>
+	<variable name="ListWatchedColor">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">FFDDBD3E</value>		
+	</variable>
+	<variable name="ListWatchedBoldA">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">[B]</value>		
+	</variable>
+	<variable name="ListWatchedBoldB">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">[/B]</value>		
 	</variable>
 	<variable name="WallWatchedIconVar">
 		<value condition="ListItem.IsRecording">windows/pvr/record.png</value>
