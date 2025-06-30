@@ -480,6 +480,15 @@
 		<value condition="!String.IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
 		<value condition="!ListItem.IsParentFolder">OverlayUnwatched.png</value>
 	</variable>
+	<variable name="ListWatchedColor">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">FFDDBD3E</value>		
+	</variable>
+	<variable name="ListWatchedBoldA">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">[B]</value>		
+	</variable>
+	<variable name="ListWatchedBoldB">
+		<value condition="Integer.IsGreater(ListItem.Playcount,0)">[/B]</value>		
+	</variable>
 	<variable name="ItemStatusIconVar">
 		<value condition="[String.IsEqual(Listitem.DBType,tvshow) | String.IsEqual(Listitem.DBType,season)] + String.IsEqual(ListItem.Property(WatchedEpisodes),ListItem.Property(TotalEpisodes)) | String.IsEqual(ListItem.DBtype,set) + String.IsEqual(ListItem.Property(Watched),ListItem.Property(Total))">OverlayWatched.png</value>
 		<value condition="String.IsEqual(ListItem.DBtype,tvshow) | String.IsEqual(ListItem.DBtype,set) | String.IsEqual(ListItem.DBType,season)">lists/played-total.png</value>
