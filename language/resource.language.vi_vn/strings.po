@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Main\n"
 "Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-02-26 16:13+0000\n"
+"PO-Revision-Date: 2023-12-04 09:42+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Vietnamese <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-estuary/vi_vn/>\n"
 "Language: vi_vn\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11\n"
+"X-Generator: Weblate 5.2.1\n"
 
 msgctxt "Addon Summary"
 msgid "Estuary skin by phil65. (Kodi's default skin)"
@@ -193,6 +193,10 @@ msgctxt "#31039"
 msgid "Fast forward"
 msgstr "Tua tới nhanh"
 
+msgctxt "#31040"
+msgid "Edit widgets"
+msgstr ""
+
 msgctxt "#31041"
 msgid "Camera manufacturer"
 msgstr "Nhà sản xuất máy ảnh"
@@ -248,14 +252,6 @@ msgstr "Hiển thị màn hình đăng nhập khi khởi động"
 msgctxt "#31058"
 msgid "Automatic Login on startup"
 msgstr "Đăng nhập tự động khi khởi động"
-
-msgctxt "#31059"
-msgid "Select + X"
-msgstr "Chọn + X"
-
-msgctxt "#31060"
-msgid "Select + Start"
-msgstr "Chọn + Start"
 
 msgctxt "#31061"
 msgid "Main menu items"
@@ -316,6 +312,11 @@ msgstr "Diễn viên không có sẵn"
 msgctxt "#31080"
 msgid "Ends at"
 msgstr "Kết thúc vào"
+
+#. Label to highlight that live stream is being played
+msgctxt "#31081"
+msgid "Live"
+msgstr ""
 
 msgctxt "#31082"
 msgid "Lyrics add-on"
@@ -398,6 +399,16 @@ msgctxt "#31107"
 msgid "WideList"
 msgstr "WideList"
 
+#. viewtype name
+msgctxt "#31108"
+msgid "MediaList"
+msgstr ""
+
+# empty strings from id 31108 to 31108
+msgctxt "#31109"
+msgid "Video streams"
+msgstr ""
+
 msgctxt "#31110"
 msgid "Enter files section"
 msgstr "Truy cập phần tập tin"
@@ -407,8 +418,8 @@ msgid "View your personal pictures or download one of the many image add-ons fro
 msgstr "Xem ảnh cá nhân của bạn hoặc tải xuống một trong nhiều tiện ích hình ảnh từ kho lưu trữ chính thức."
 
 msgctxt "#31112"
-msgid "Toggle audio stream"
-msgstr "Chuyển đổi luồng âm thanh"
+msgid "Audio streams"
+msgstr ""
 
 msgctxt "#31113"
 msgid "Search local library"
@@ -419,8 +430,8 @@ msgid "Search YouTube"
 msgstr "Tìm kiếm Youtube"
 
 msgctxt "#31115"
-msgid "Toggle subtitle"
-msgstr "Chuyển đổi phụ đề"
+msgid "Subtitles streams"
+msgstr ""
 
 msgctxt "#31116"
 msgid "Remove this main menu item"
@@ -505,7 +516,7 @@ msgstr "Nhấn vào đây để xem những thay đổi mới nhất..."
 #. Label to show PVR info page
 msgctxt "#31137"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 #. Label to show player info page
 msgctxt "#31138"
@@ -652,7 +663,7 @@ msgstr ""
 #. Helper text for the label of OSD settings category
 msgctxt "#31171"
 msgid "On screen display (OSD) related settings"
-msgstr ""
+msgstr "Cài đặt liên quan đến hiển thị trên màn hình (OSD)"
 
 #. Setting Automatically close video OSD
 msgctxt "#31172"
@@ -667,7 +678,7 @@ msgstr ""
 #. Setting to control what happens when clicking a music album on the home screen
 msgctxt "#31174"
 msgid "Default select action for albums on the home screen"
-msgstr ""
+msgstr "Chọn hành động mặc định cho album trên màn hình chính"
 
 #. Setting to control what happens when clicking a TV show on the home screen
 msgctxt "#31175"
@@ -677,6 +688,22 @@ msgstr ""
 #. Setting to control what happens when clicking a movie set on the home screen
 msgctxt "#31176"
 msgid "Default select action for movie sets on the home screen"
+msgstr ""
+
+# empty strings from id 31177 to 31596
+#. Button to select Player Process Info window
+msgctxt "#31597"
+msgid "Player info"
+msgstr ""
+
+#. Label to show player cache
+msgctxt "#31598"
+msgid "Player cache"
+msgstr ""
+
+#. Label to show the video codec name
+msgctxt "#31599"
+msgid "Audio decoder"
 msgstr ""
 
 # empty strings from id 31170 to 31599
@@ -698,7 +725,7 @@ msgstr "Tỉ lệ khung hình"
 #. Label to show the video bitrate
 msgctxt "#31603"
 msgid "Video bitrate"
-msgstr ""
+msgstr "Tốc độ bit video"
 
 #. Label to show the audio codec name
 msgctxt "#31604"
@@ -713,7 +740,7 @@ msgstr "Kênh âm thanh"
 #. Label to show the audio bitrate
 msgctxt "#31606"
 msgid "Audio bitrate"
-msgstr ""
+msgstr "Tốc độ bit âm thanh"
 
 #. Label to show the screen resolution
 msgctxt "#31607"
@@ -739,6 +766,31 @@ msgstr "Đa phương tiện"
 msgctxt "#31611"
 msgid "System"
 msgstr "Hệ thống"
+
+#. Audio channels
+msgctxt "#31612"
+msgid "channels"
+msgstr ""
+
+#~ msgctxt "#31112"
+#~ msgid "Toggle audio stream"
+#~ msgstr "Chuyển đổi luồng âm thanh"
+
+#~ msgctxt "#31115"
+#~ msgid "Toggle subtitle"
+#~ msgstr "Chuyển đổi phụ đề"
+
+#~ msgctxt "#31615"
+#~ msgid "Extras"
+#~ msgstr "Vai phụ"
+
+#~ msgctxt "#31059"
+#~ msgid "Select + X"
+#~ msgstr "Chọn + X"
+
+#~ msgctxt "#31060"
+#~ msgid "Select + Start"
+#~ msgstr "Chọn + Start"
 
 #~ msgctxt "#31137"
 #~ msgid "PVR info"

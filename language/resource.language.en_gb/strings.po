@@ -232,7 +232,10 @@ msgctxt "#31039"
 msgid "Fast forward"
 msgstr ""
 
-#empty string with id 31040
+#: /xml/SkinSettings.xml
+msgctxt "#31040"
+msgid "Edit widgets"
+msgstr ""
 
 #: /xml/Variables.xml /xml/MyPics.xml
 msgctxt "#31041"
@@ -308,15 +311,7 @@ msgctxt "#31058"
 msgid "Automatic Login on startup"
 msgstr ""
 
-#: /xml/GameOSD.xml
-msgctxt "#31059"
-msgid "Select + X"
-msgstr ""
-
-#: /xml/GameOSD.xml
-msgctxt "#31060"
-msgid "Select + Start"
-msgstr ""
+#empty strings from id 31059 to 31060
 
 #: /xml/SkinSettings.xml
 msgctxt "#31061"
@@ -399,7 +394,11 @@ msgctxt "#31080"
 msgid "Ends at"
 msgstr ""
 
-#empty string with id 31081
+#: /xml/Custom_1109_TopBarOverlay.xml
+#. Label to highlight that live stream is being played
+msgctxt "#31081"
+msgid "Live"
+msgstr ""
 
 #: /xml/Custom_1105_MusicOSDSettings.xml
 msgctxt "#31082"
@@ -507,7 +506,16 @@ msgctxt "#31107"
 msgid "WideList"
 msgstr ""
 
-#empty strings from id 31108 to 31109
+#. viewtype name
+#: /xml/View_504_MediaList.xml
+msgctxt "#31108"
+msgid "MediaList"
+msgstr ""
+
+#: /xml/VideoOSD.xml
+msgctxt "#31109"
+msgid "Video streams"
+msgstr ""
 
 #: /xml/Home.xml
 msgctxt "#31110"
@@ -521,7 +529,7 @@ msgstr ""
 
 #: /xml/VideoOSD.xml
 msgctxt "#31112"
-msgid "Toggle audio stream"
+msgid "Audio streams"
 msgstr ""
 
 #: /xml/Custom_1107_SearchDialog.xml
@@ -536,7 +544,7 @@ msgstr ""
 
 #: /xml/VideoOSD.xml
 msgctxt "#31115"
-msgid "Toggle subtitle"
+msgid "Subtitles streams"
 msgstr ""
 
 #: /xml/Includes_Home.xml
@@ -856,7 +864,25 @@ msgctxt "#31176"
 msgid "Default select action for movie sets on the home screen"
 msgstr ""
 
-#empty strings from id 31177 to 31599
+#empty strings from id 31177 to 31596
+
+#: /xml/Includes_SettingsDialog.xml
+#. Button to select Player Process Info window
+msgctxt "#31597"
+msgid "Player info"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+#. Label to show player cache
+msgctxt "#31598"
+msgid "Player cache"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+#. Label to show the video codec name
+msgctxt "#31599"
+msgid "Audio decoder"
+msgstr ""
 
 #: /xml/DialogPlayerProcessInfo.xml
 #. Label to show the video codec name
@@ -928,4 +954,10 @@ msgstr ""
 #. Label to show the system info page
 msgctxt "#31611"
 msgid "System"
+msgstr ""
+
+#: /xml/Includes_DialogSelect.xml
+#. Audio channels
+msgctxt "#31612"
+msgid "channels"
 msgstr ""

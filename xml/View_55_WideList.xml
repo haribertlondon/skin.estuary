@@ -44,7 +44,7 @@
 							<right>40</right>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
-							<label>$VAR[ListWatchedBoldA][COLOR $VAR[ListWatchedColor]]$INFO[ListItem.Label][/COLOR]$VAR[ListWatchedBoldB]</label>
+							<label>$VAR[ListLabelVar]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
@@ -72,7 +72,7 @@
 							<bottom>0</bottom>
 							<right>40</right>
 							<aligny>center</aligny>
-							<label>$VAR[ListWatchedBoldA][COLOR $VAR[ListWatchedColor]]$INFO[ListItem.Label][/COLOR]$VAR[ListWatchedBoldB]</label>
+							<label>$VAR[ListLabelVar]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
@@ -86,7 +86,7 @@
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</itemlayout>
-					<focusedlayout height="list_item_height" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content() + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(movies) + !Container.Content(musicvideos) + !Container.Content(videos)+ !Container.Content(favourites)">
+					<focusedlayout height="list_item_height" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content() + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(movies) + !Container.Content(musicvideos) + !Container.Content(videos) + !Container.Content(favourites) + !Container.Content(recordings)">
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
@@ -108,7 +108,7 @@
 							<right>40</right>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
-							<label>$VAR[ListWatchedBoldA][COLOR $VAR[ListWatchedColor]]$INFO[ListItem.Label][/COLOR]$VAR[ListWatchedBoldB]</label>
+							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
@@ -122,7 +122,7 @@
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="list_item_height" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content() + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(movies) + !Container.Content(musicvideos) + !Container.Content(videos) + !Container.Content(favourites)">
+					<itemlayout height="list_item_height" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content() + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(movies) + !Container.Content(musicvideos) + !Container.Content(videos) + !Container.Content(favourites) + !Container.Content(recordings)">
 						<control type="image">
 							<left>35</left>
 							<centertop>50%</centertop>
